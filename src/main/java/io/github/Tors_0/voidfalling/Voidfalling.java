@@ -1,9 +1,9 @@
 package io.github.Tors_0.voidfalling;
 
-import io.github.Tors_0.voidfalling.registry.ModBiomes;
-import io.github.Tors_0.voidfalling.registry.ModBlocks;
-import io.github.Tors_0.voidfalling.registry.ModDimensions;
-import io.github.Tors_0.voidfalling.registry.ModItems;
+import io.github.Tors_0.voidfalling.registry.*;
+import io.github.Tors_0.voidfalling.registry.worldgen.ModBiomes;
+import io.github.Tors_0.voidfalling.registry.worldgen.ModDimensions;
+import io.github.Tors_0.voidfalling.registry.worldgen.ModFeatures;
 import net.minecraft.util.Identifier;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
@@ -17,16 +17,19 @@ public class Voidfalling implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 
-
-
 	@Override
 	public void onInitialize(ModContainer mod) {
 		LOGGER.info("Hello Quilt world from {}!", mod.metadata().name());
 
-		ModBiomes.register();
-		ModDimensions.register();
+		// create blocks and items (must be registered before we can modify worldgen)
 		ModBlocks.register();
 		ModItems.register();
+
+		// add modded worldgen features
+		// yippee :D
+		ModBiomes.register();
+		ModDimensions.register();
+		ModFeatures.place();
 	}
 
 	public static Identifier getIdentifier(String name) {

@@ -6,4 +6,6 @@ public class CrystallizedVoidBlock extends AmethystBlock {
 	public CrystallizedVoidBlock(Settings settings) {
 		super(settings);
 	}
+
+
 }

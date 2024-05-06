@@ -1,4 +1,4 @@
-package io.github.Tors_0.voidfalling.registry;
+package io.github.Tors_0.voidfalling.registry.worldgen;
 
 import io.github.Tors_0.voidfalling.Voidfalling;
 import net.minecraft.util.registry.BuiltinRegistries;

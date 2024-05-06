@@ -1,0 +1,19 @@
+{
+  "item.voidfalling.budding_crystallized_void": "Budding Crystallized Void",
+  "item.voidfalling.crystallized_void": "Block of Crystallized Void",
+  "item.voidfalling.crystallized_void_cluster": "Crystallized Void Cluster",
+  "item.voidfalling.crystallized_void_shard": "Crystallized Void Crystals",
+  "item.voidfalling.large_crystallized_void_bud": "Large Void Crystal",
+  "item.voidfalling.medium_crystallized_void_bud": "Medium Void Crystal",
+  "item.voidfalling.small_crystallized_void_bud": "Small Void Crystal",
+  "item.voidfalling.voided": "Voided Block",
+
+
+  "block.voidfalling.budding_crystallized_void": "Budding Crystallized Void",
+  "block.voidfalling.crystallized_void": "Block of Crystallized Void",
+  "block.voidfalling.crystallized_void_cluster": "Crystallized Void Cluster",
+  "block.voidfalling.large_crystallized_void_bud": "Large Void Crystal",
+  "block.voidfalling.medium_crystallized_void_bud": "Medium Void Crystal",
+  "block.voidfalling.small_crystallized_void_bud": "Small Void Crystal",
+  "block.voidfalling.voided": "Voided Block"
+}

@@ -6,15 +6,15 @@
 		"version": "${version}",
 		"metadata": {
 			"name": "Voidfalling",
-			"description": "A short description of your mod.",
+			"description": "The void, surely, must be a bountiful yet treacherous well of untapped potential...",
 			"contributors": {
 				"Raeeeee": "Owner"
 			},
 			"contact": {
-				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
-				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+				"issues": "https://github.com/Tors-0/voidfalling/issues",
+				"sources": "https://github.com/Tors-0/voidfalling"
 			},
-			"icon": "assets/example_mod/icon.png"
+			"icon": "assets/voidfalling/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
@@ -24,7 +24,7 @@
 		"depends": [
 			{
 				"id": "quilt_loader",
-				"versions": ">=0.17.0-"
+				"versions": ">=0.25.0-"
 			},
 			{
 				"id": "quilted_fabric_api",

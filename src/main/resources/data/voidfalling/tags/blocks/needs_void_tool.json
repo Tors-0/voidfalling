@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "voidfalling:budding_crystallized_void",
+    "voidfalling:crystallized_void",
+    "voidfalling:crystallized_void_cluster",
+    "voidfalling:large_crystallized_void_bud",
+    "voidfalling:medium_crystallized_void_bud",
+    "voidfalling:small_crystallized_void_bud",
+    "voidfalling:voided"
+  ]
+}

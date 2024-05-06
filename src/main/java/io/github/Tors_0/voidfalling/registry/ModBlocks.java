@@ -2,6 +2,7 @@ package io.github.Tors_0.voidfalling.registry;
 
 import io.github.Tors_0.voidfalling.Voidfalling;
 import io.github.Tors_0.voidfalling.block.crystallized_void.BuddingCrystallizedVoidBlock;
+import io.github.Tors_0.voidfalling.block.crystallized_void.CrystallizedVoidBlock;
 import io.github.Tors_0.voidfalling.block.crystallized_void.CrystallizedVoidClusterBlock;
 import io.github.Tors_0.voidfalling.block.voided.VoidedBlock;
 import net.minecraft.block.*;
@@ -24,9 +25,14 @@ public interface ModBlocks {
 
 	Block VOIDED_BLOCK = createBlock("voided", new VoidedBlock(QuiltBlockSettings.of(Material.PORTAL, MapColor.BLACK).strength(30, 3600000).sounds(BlockSoundGroup.STONE)), true);
 
+	Block CRYSTALLIZED_VOID = createBlock(
+		"crystallized_void",
+		new CrystallizedVoidBlock(QuiltBlockSettings.of(Material.AMETHYST).strength(1.5f).sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool()),
+		true
+	);
 	Block BUDDING_CRYSTALLIZED_VOID = createBlock(
 		"budding_crystallized_void",
-		new BuddingCrystallizedVoidBlock(QuiltBlockSettings.of(Material.AMETHYST).ticksRandomly().strength(1.5F).sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool().luminance(state -> 10)),
+		new BuddingCrystallizedVoidBlock(QuiltBlockSettings.of(Material.AMETHYST).ticksRandomly().strength(1.5F).sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool()),
 		true
 	);
 	Block CRYSTALLIZED_VOID_CLUSTER = createBlock(
