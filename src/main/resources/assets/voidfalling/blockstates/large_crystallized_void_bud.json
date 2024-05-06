@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "voidfalling:block/large_crystallized_void_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "voidfalling:block/large_crystallized_void_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "voidfalling:block/large_crystallized_void_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "voidfalling:block/large_crystallized_void_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "voidfalling:block/large_crystallized_void_bud"
+    },
+    "facing=west": {
+      "model": "voidfalling:block/large_crystallized_void_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

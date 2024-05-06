@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "voidfalling:block/large_crystallized_void_bud"
+  }
+}

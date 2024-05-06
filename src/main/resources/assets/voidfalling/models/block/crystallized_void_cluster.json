@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "voidfalling:block/crystallized_void_cluster"
+  }
+}
