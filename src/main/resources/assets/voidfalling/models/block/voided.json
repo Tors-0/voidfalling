@@ -1,0 +1,7 @@
+{
+  "parent": "block/sculk",
+  "textures": {
+    "all": "voidfalling:block/voided",
+    "particle": "voidfalling:block/voided"
+  }
+}
