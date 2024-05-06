@@ -11,7 +11,7 @@ import java.awt.*;
 public class ModDimensions {
 	private static final RegistryKey<DimensionOptions> VOIDED_KEY = RegistryKey.of(Registry.DIMENSION_KEY, Voidfalling.getIdentifier("voiddim"));
 
-	private static RegistryKey<World> WORLD_KEY = RegistryKey.of(Registry.WORLD_KEY, VOIDED_KEY.getValue());
+	public static RegistryKey<World> WORLD_KEY = RegistryKey.of(Registry.WORLD_KEY, VOIDED_KEY.getValue());
 
 	public static void register() {
 		WORLD_KEY = RegistryKey.of(Registry.WORLD_KEY, Voidfalling.getIdentifier("voiddim"));

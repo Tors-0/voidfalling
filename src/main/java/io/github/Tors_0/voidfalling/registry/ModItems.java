@@ -1,6 +1,6 @@
 package io.github.Tors_0.voidfalling.registry;
 
-import io.github.Tors_0.voidfalling.VoidBreakerItem;
+import io.github.Tors_0.voidfalling.item.VoidBreakerItem;
 import io.github.Tors_0.voidfalling.Voidfalling;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
