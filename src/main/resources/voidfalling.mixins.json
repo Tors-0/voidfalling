@@ -4,8 +4,9 @@
   "package": "io.github.Tors_0.voidfalling.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "MiningToolItemMixin",
-    "LivingEntityMixin"
+    "EnderEyeItemMixin",
+    "LivingEntityMixin",
+    "MiningToolItemMixin"
   ],
   "client": [
   ],
