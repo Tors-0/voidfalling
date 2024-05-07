@@ -1,6 +1,7 @@
 package io.github.Tors_0.voidfalling.registry;
 
 import io.github.Tors_0.voidfalling.Voidfalling;
+import io.github.Tors_0.voidfalling.block.VoidActuatorBlock;
 import io.github.Tors_0.voidfalling.block.crystallized_void.BuddingCrystallizedVoidBlock;
 import io.github.Tors_0.voidfalling.block.crystallized_void.CrystallizedVoidBlock;
 import io.github.Tors_0.voidfalling.block.crystallized_void.CrystallizedVoidClusterBlock;
@@ -23,8 +24,12 @@ public interface ModBlocks {
 
 //	Block MOD_BLOCK = createBlock("mod_block", new ModBlock(QuiltBlockSettings.of(Material.SOME_MATERIAL, MapColor.SOME_COLOR).strength(-1.0F, 3600000.0F).sounds(BlockSoundGroup.COPPER)), true);
 
-	Block VOIDED_BLOCK = createBlock("voided", new VoidedBlock(QuiltBlockSettings.of(Material.PORTAL, MapColor.BLACK).strength(30, 3600000).sounds(BlockSoundGroup.STONE)), true);
-
+	Block VOIDED_BLOCK = createBlock("voided",
+		new VoidedBlock(QuiltBlockSettings.of(Material.PORTAL, MapColor.BLACK).strength(30, 3600000).sounds(BlockSoundGroup.STONE)),
+		true);
+	Block VOID_ACTUATOR = createBlock("void_actuator",
+		new VoidActuatorBlock(QuiltBlockSettings.of(Material.METAL).strength(10, 3600000).sounds(BlockSoundGroup.ANVIL)),
+		true);
 	Block CRYSTALLIZED_VOID = createBlock(
 		"crystallized_void",
 		new CrystallizedVoidBlock(QuiltBlockSettings.of(Material.AMETHYST).strength(1.5f).sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool()),
