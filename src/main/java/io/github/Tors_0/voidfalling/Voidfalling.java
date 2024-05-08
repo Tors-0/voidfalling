@@ -26,6 +26,7 @@ public class Voidfalling implements ModInitializer {
 		ModItems.register();
 
 		ModEntities.initialize();
+		ModBlockEntities.register();
 
 		// add modded worldgen features
 		// yippee :D

@@ -5,7 +5,7 @@ import io.github.Tors_0.voidfalling.block.VoidActuatorBlock;
 import io.github.Tors_0.voidfalling.block.crystallized_void.BuddingCrystallizedVoidBlock;
 import io.github.Tors_0.voidfalling.block.crystallized_void.CrystallizedVoidBlock;
 import io.github.Tors_0.voidfalling.block.crystallized_void.CrystallizedVoidClusterBlock;
-import io.github.Tors_0.voidfalling.block.voided.VoidedBlock;
+import io.github.Tors_0.voidfalling.block.VoidedBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;

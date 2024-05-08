@@ -1,4 +1,4 @@
-package io.github.Tors_0.voidfalling.block.voided;
+package io.github.Tors_0.voidfalling.block;
 
 import net.minecraft.block.Block;
 
