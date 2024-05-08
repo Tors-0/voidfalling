@@ -34,7 +34,7 @@ public abstract class LivingEntityMixin extends Entity {
 			Vec3d destPos = new Vec3d(this.getX(), 0, this.getZ()).multiply(16);
 			ServerPlayerEntity player = QuiltDimensions.teleport(this, voidDimension,
 				new TeleportTarget(destPos, Vec3d.ZERO, this.getYaw(), this.getPitch()));
-			destPos = destPos.add(0, -10, 0);
+			destPos = destPos.add(0, -64, 0);
 			voidDimension.setBlockState(new BlockPos(destPos), ModBlocks.VOIDED_BLOCK.getDefaultState());
 			if (player != null) {
 				player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 220, 5, false, false, false));
