@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cross",
+  "parent": "voidfalling:block/cross_tall",
   "textures": {
     "cross": "voidfalling:block/crystallized_void_cluster"
   }

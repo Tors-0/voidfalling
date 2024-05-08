@@ -16,12 +16,29 @@ import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
 
 public class VoidActuatorEntity extends PersistentProjectileEntity {
+	private double startingY;
 	public VoidActuatorEntity(EntityType<? extends PersistentProjectileEntity> entityType, World world) {
 		super(entityType, world);
 	}
 
 	public VoidActuatorEntity(double x, double y, double z, World world) {
 		super(ModEntities.VOID_ACTUATOR, x, y, z, world);
+		this.startingY = y;
+	}
+	public double getStartingY() {
+		return this.startingY;
+	}
+
+	@Override
+	public void writeCustomDataToNbt(NbtCompound nbt) {
+		super.writeCustomDataToNbt(nbt);
+		nbt.putDouble("startingY", this.startingY);
+	}
+
+	@Override
+	public void readCustomDataFromNbt(NbtCompound nbt) {
+		super.readCustomDataFromNbt(nbt);
+		this.startingY = nbt.getDouble("startingY");
 	}
 
 	@Override
@@ -31,7 +48,7 @@ public class VoidActuatorEntity extends PersistentProjectileEntity {
 
 	@Override
 	public void tick() {
-		if (this.age % 10 == 0) {
+		if (this.age % 5 == 0) {
 			BlockPos pos = this.getBlockPos();
 
 			if (pos.getY() < this.getWorld().getBottomY()) {

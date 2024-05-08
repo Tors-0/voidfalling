@@ -4,6 +4,10 @@
     "layer0": "voidfalling:block/crystallized_void_cluster"
   },
   "display": {
+    "gui": {
+      "scale": [ 1, 1.75, 1 ],
+      "translation": [ 0, 6, 0 ]
+    },
     "head": {
       "translation": [ 0, 14, -5 ]
     }

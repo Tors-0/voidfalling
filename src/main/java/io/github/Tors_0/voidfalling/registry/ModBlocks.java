@@ -43,23 +43,23 @@ public interface ModBlocks {
 	Block CRYSTALLIZED_VOID_CLUSTER = createBlock(
 		"crystallized_void_cluster",
 		new CrystallizedVoidClusterBlock(
-			7, 3, QuiltBlockSettings.of(Material.AMETHYST).nonOpaque().ticksRandomly().sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.5F).luminance(state -> 5)
+			14, 3, QuiltBlockSettings.of(Material.AMETHYST).nonOpaque().ticksRandomly().sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(1.5F).luminance(state -> 5)
 		),
 		true
 	);
 	Block LARGE_CRYSTALLIZED_VOID_BUD = createBlock(
 		"large_crystallized_void_bud",
-		new CrystallizedVoidClusterBlock(5, 3, QuiltBlockSettings.copy(CRYSTALLIZED_VOID_CLUSTER).sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).luminance(state -> 4)),
+		new CrystallizedVoidClusterBlock(10, 3, QuiltBlockSettings.copy(CRYSTALLIZED_VOID_CLUSTER).sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD).luminance(state -> 4)),
 		true
 	);
 	Block MEDIUM_CRYSTALLIZED_VOID_BUD = createBlock(
 		"medium_crystallized_void_bud",
-		new CrystallizedVoidClusterBlock(4, 3, QuiltBlockSettings.copy(CRYSTALLIZED_VOID_CLUSTER).sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).luminance(state -> 2)),
+		new CrystallizedVoidClusterBlock(8, 3, QuiltBlockSettings.copy(CRYSTALLIZED_VOID_CLUSTER).sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).luminance(state -> 2)),
 		true
 	);
 	Block SMALL_CRYSTALLIZED_VOID_BUD = createBlock(
 		"small_crystallized_void_bud",
-		new CrystallizedVoidClusterBlock(3, 4, QuiltBlockSettings.copy(CRYSTALLIZED_VOID_CLUSTER).sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).luminance(state -> 1)),
+		new CrystallizedVoidClusterBlock(5, 4, QuiltBlockSettings.copy(CRYSTALLIZED_VOID_CLUSTER).sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).luminance(state -> 1)),
 		true
 	);
 
