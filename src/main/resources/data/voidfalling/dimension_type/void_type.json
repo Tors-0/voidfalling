@@ -10,10 +10,10 @@
   "coordinate_scale": 0.0625,
   "ambient_light": 0.25,
   "fixed_time": 18000,
-  "logical_height": 64,
+  "logical_height": 256,
   "effects": "minecraft:the_nether",
   "infiniburn": "#minecraft:infiniburn_end",
-  "min_y": -256,
+  "min_y": -320,
   "height": 256,
   "monster_spawn_light_level": {
     "type": "minecraft:uniform",

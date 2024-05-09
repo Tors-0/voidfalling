@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
 
 public class VoidActuatorEntity extends PersistentProjectileEntity {
-	private double startingY;
+	private double startingY = 0;
 	public VoidActuatorEntity(EntityType<? extends PersistentProjectileEntity> entityType, World world) {
 		super(entityType, world);
 	}
@@ -48,7 +48,8 @@ public class VoidActuatorEntity extends PersistentProjectileEntity {
 
 	@Override
 	public void tick() {
-		if (this.age % 5 == 0) {
+		if (!(this.getWorld() instanceof ServerWorld)) return;
+		if (this.age % (this.getY() / 2 == 0 ? 1 : this.getY() / 2) == 0) {
 			BlockPos pos = this.getBlockPos();
 
 			if (pos.getY() < this.getWorld().getBottomY()) {
@@ -69,7 +70,6 @@ public class VoidActuatorEntity extends PersistentProjectileEntity {
 			this.move(MovementType.SELF, new Vec3d(0, -1, 0));
 		}
 
-		this.age++;
 		super.baseTick();
 	}
 }

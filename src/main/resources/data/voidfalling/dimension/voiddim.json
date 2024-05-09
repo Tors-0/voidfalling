@@ -3,7 +3,7 @@
   "generator": {
     "type": "minecraft:noise",
     "settings": {
-      "sea_level": -256,
+      "sea_level": -320,
       "disable_mob_generation": false,
       "aquifers_enabled": false,
       "ore_veins_enabled": false,
@@ -18,7 +18,7 @@
         }
       },
       "noise": {
-        "min_y": -256,
+        "min_y": -320,
         "height": 256,
         "size_horizontal": 2,
         "size_vertical": 1
@@ -51,8 +51,8 @@
                     "type": "minecraft:mul",
                     "argument1": {
                       "type": "minecraft:y_clamped_gradient",
-                      "from_y": -252,
-                      "to_y": -224,
+                      "from_y": -316,
+                      "to_y": -288,
                       "from_value": 0,
                       "to_value": 1
                     },
@@ -66,8 +66,8 @@
                           "type": "minecraft:mul",
                           "argument1": {
                             "type": "minecraft:y_clamped_gradient",
-                            "from_y": -72,
-                            "to_y": 184,
+                            "from_y": -136,
+                            "to_y": 120,
                             "from_value": 1,
                             "to_value": 0
                           },
