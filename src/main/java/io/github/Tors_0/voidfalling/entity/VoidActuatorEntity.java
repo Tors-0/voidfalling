@@ -49,7 +49,7 @@ public class VoidActuatorEntity extends PersistentProjectileEntity {
 	@Override
 	public void tick() {
 		if (!(this.getWorld() instanceof ServerWorld)) return;
-		if (this.age % (this.getY() / 2 == 0 ? 1 : this.getY() / 2) == 0) {
+		if (this.age % 12 == 0) {
 			BlockPos pos = this.getBlockPos();
 
 			if (pos.getY() < this.getWorld().getBottomY()) {
